@@ -1,0 +1,62 @@
+;
+; ValoDrv.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System ; TODO: specify appropriate Class
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider    = %ManufacturerName%
+CatalogFile = ValoDrv.cat
+DriverVer = 11/28/2024,2.21.37.973
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+ValoDrv.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard,NTamd64.10.0...16299 ; %13% support introduced in build 16299
+
+[Standard.NTamd64.10.0...16299]
+%ValoDrv.DeviceDesc% = ValoDrv_Device, Root\ValoDrv ; TODO: edit hw-id
+
+[ValoDrv_Device.NT]
+CopyFiles = File_Copy
+
+[File_Copy]
+ValoDrv.sys
+
+;-------------- Service installation
+[ValoDrv_Device.NT.Services]
+AddService = ValoDrv,%SPSVCINST_ASSOCSERVICE%, ValoDrv_Service_Inst
+
+; -------------- ValoDrv driver install sections
+[ValoDrv_Service_Inst]
+DisplayName    = %ValoDrv.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\ValoDrv.sys
+
+[ValoDrv_Device.NT.Wdf]
+KmdfService = ValoDrv, ValoDrv_wdfsect
+
+[ValoDrv_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName = "<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "ValoDrv Installation Disk"
+ValoDrv.DeviceDesc = "ValoDrv Device"
+ValoDrv.SVCDESC = "ValoDrv Service"

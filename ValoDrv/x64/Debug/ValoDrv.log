@@ -1,0 +1,31 @@
+﻿  Building 'kernel' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\ValoDrv.inf
+  Stamping [Version] section with DriverVer=11/28/2024,2.21.37.973
+  Entry.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(61,26): error C2220: the following warning is treated as an error
+  (compiling source file 'Entry.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Entry.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'Entry.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'Entry.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'Entry.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Entry.cpp')
+  
+C:\Users\Ellalover1128\Desktop\erf\ValoDrv\Funcs.hpp(185,23): warning C4996: 'ExAllocatePool': ExAllocatePool is deprecated, use ExAllocatePool2.
+  (compiling source file 'Entry.cpp')
+  
