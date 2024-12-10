@@ -1,1 +1,1 @@
-#### you need to sign the driver for it to be functional.
+#### you need to sign the driver.
