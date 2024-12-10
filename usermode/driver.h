@@ -43,13 +43,7 @@ namespace driver {
 	INT32 ProcessIdentifier;
 
 	bool Init() {
-		int	id[4];
-		__cpuid(id, 1);
-		wchar_t buffer[1];
-
-		wsprintfW(buffer, L"\\\\.\\\%08X", id[0]);
-
-		DriverHandle = CreateFileW(buffer, GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+		DriverHandle = CreateFileW((L"\\\\.\\\SLIGHTSPASTED"), GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
 
 		if (!DriverHandle || (DriverHandle == INVALID_HANDLE_VALUE))
 			return false;
