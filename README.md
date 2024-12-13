@@ -1,7 +1,7 @@
 ### you need to sign the driver to make work.
 #### Status : working 12-12-2024 🟢
 #### 🌠 cheat ready to use with this driver contact me ( not free ) $100.00 Source Cheat ( ONLY ) 🌠
-#### 🌟 Injector that work with external ( and work with my external cheat ) that inject cheat into another program like mspaint.exe , notepad.exe ect come with Keyauth and protection $75.00 🌟
+#### 🌟 Injector that work with external cheat any ( and work with my external cheat ) that inject cheat into another program like mspaint.exe , notepad.exe ect come with Keyauth and protection $75.00 🌟
 #### 🌟 Bypass Pop-Up Message Error Like TPM , Secure Boot , HVCI $20.00 / month or $50.00 lifetime 🌟
 #### 🌠 discord : aimxpert 🌠
 ###  🌟[VIDEO CLICK-HERE](https://kinescope.io/gzfnX9mVjK1EUrg7Htmnt1) 🌟
